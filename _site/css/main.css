@@ -5,17 +5,19 @@
 html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img { margin: 0; padding: 0; border: 0; }
 
 /*- Base color -*/
+/*- $text-color: #0da4d3; -*/
+/*- $text-color: #333333; -*/
 /*- Base settings -*/
-html { background-color: #FFFFFF; font-size: 16px; line-height: 1.8; color: #333333; }
+html { background-color: #FFFFFF; font-size: 16px; line-height: 1.8; color: #0da4d3; }
 
 @media (min-width: 940px) { html { font-size: 18px; } }
 
 body { max-width: 1000px; margin: 0 auto; padding: 0 10px; }
 
 /*- Link -*/
-a { color: #333333; text-decoration: none; font-weight: 700; }
+a { color: #0da4d3; text-decoration: none; font-weight: 400; }
 
-a:hover, a:focus { color: #262626; }
+a:hover, a:focus { color: #0c91bb; }
 
 /* Common classes */
 .f-right { float: right; }
@@ -51,7 +53,7 @@ a:hover, a:focus { color: #262626; }
 .left { left: 0; }
 
 /*- Typography -*/
-body { font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-style: normal; font-weight: 400; font-size: 16px; color: #333; }
+body { font-family: "Abel", sans-serif; font-style: normal; font-weight: 400; font-size: 16px; color: #333; }
 
 /*- Typography for medium and small screen, based on 16px font-size -*/
 p, ul, ol { font-size: 1em; /* 16px */ line-height: 1.8em; margin-bottom: 1.5em; /* 24px/16px */ }
@@ -76,7 +78,7 @@ blockquote p, blockquote ul, blockquote ol { padding: 1.5em 0; /* 24px/18px */ }
 
 /* -- General Layout -- */
 /* Navigation */
-#nav a, #nav-left a { display: block; color: #333333; padding: 0.33334em 0; font-size: 1.5em; font-weight: 400; }
+#nav a, #nav-left a { display: block; color: #0da4d3; padding: 0.33334em 0; font-size: 1.5em; font-weight: 400; }
 
 @media (min-width: 940px) { #nav a, #nav-left a { font-size: 1em; } }
 
@@ -99,10 +101,10 @@ blockquote p, blockquote ul, blockquote ol { padding: 1.5em 0; /* 24px/18px */ }
 
 @media (max-width: 940px) { #nav-links { display: none; } }
 
-#nav-links a { padding-left: 10px; color: #333333; font-weight: 300; }
+#nav-links a { padding-left: 10px; color: rgba(0, 0, 0, 0.6); font-weight: 350; }
 
 /* Separator after menu */
-#nav-list:after { display: block; content: ''; width: 5rem; height: 1px; margin: 23px auto; background-color: #333333; }
+#nav-list:after { display: block; content: ''; width: 5rem; height: 1px; margin: 23px auto; background-color: #0da4d3; }
 
 /* Icon menu */
 #nav-menu { display: block; position: fixed; top: 35px; right: 25px; z-index: 10; height: 24px; }
@@ -113,9 +115,9 @@ blockquote p, blockquote ul, blockquote ol { padding: 1.5em 0; /* 24px/18px */ }
 
 @media (min-width: 940px) { #nav-menu-left { display: none; } }
 
-#menu { height: 4px; width: 1.5em; background-color: #333333; margin-top: 8px; }
+#menu { height: 4px; width: 1.5em; background-color: #0da4d3; margin-top: 8px; }
 
-#menu:after, #menu:before { content: ""; display: block; position: relative; height: 4px; width: 1.5em; background-color: #333333; transition: all 0.3s ease-in; }
+#menu:after, #menu:before { content: ""; display: block; position: relative; height: 4px; width: 1.5em; background-color: #0da4d3; transition: all 0.3s ease-in; }
 
 #menu:before { top: -8px; }
 
@@ -123,9 +125,9 @@ blockquote p, blockquote ul, blockquote ol { padding: 1.5em 0; /* 24px/18px */ }
 
 #menu.btn-close { background: none; }
 
-#menu.btn-close:before { top: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); background-color: #333333; }
+#menu.btn-close:before { top: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); background-color: #0da4d3; }
 
-#menu.btn-close:after { top: -4px; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); background-color: #333333; }
+#menu.btn-close:after { top: -4px; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); background-color: #0da4d3; }
 
 /* Main content */
 .fixed { position: fixed; width: 100%; }
@@ -151,17 +153,17 @@ blockquote p, blockquote ul, blockquote ol { padding: 1.5em 0; /* 24px/18px */ }
 
 @media (min-width: 940px) { #post-page { margin-bottom: 1.3334em; } }
 
-.post + .post:before { display: block; content: ''; width: 5rem; height: 1px; margin: 23px auto; background-color: #e6e6e6; }
+.post + .post:before { display: block; content: ''; width: 5rem; height: 1px; margin: 23px auto; background-color: white; }
 
-.by-line { display: block; color: #737373; line-height: 1.8em; margin-bottom: 1.5em; /* 24px/16px */ font-weight: 200; }
+.by-line { display: block; color: #6ad5f6; line-height: 1.8em; margin-bottom: 1.5em; /* 24px/16px */ font-weight: 200; }
 
-@media (min-width: 940px) { .by-line { display: block; color: #737373; line-height: 1.8em; margin-bottom: 1.3334em; /* 24px/18px */ font-weight: 200; } }
+@media (min-width: 940px) { .by-line { display: block; color: #6ad5f6; line-height: 1.8em; margin-bottom: 1.3334em; /* 24px/18px */ font-weight: 200; } }
 
 img { max-width: 100%; display: block; margin: 0 auto; margin-bottom: 24px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
 
 img[title="Monochrome"] { box-shadow: 0 2px 6px #ddd; }
 
-code { color: #8c8c8c; background-color: white; }
+code { color: #9ae2f9; background-color: white; }
 
 /* Set the vertical rhythm (and padding-left) for lists inside post content */
 .content ul, .content ol { line-height: 1.8em; padding-left: 1.5em; }
@@ -174,14 +176,14 @@ code { color: #8c8c8c; background-color: white; }
 /* Paginator */
 .pagination { text-align: center; margin: 2.666668em; }
 
-.pagination span { background-color: #f2f2f2; color: #333333; }
+.pagination span { background-color: #f2f2f2; color: #0da4d3; }
 
-.pagination a:hover { background-color: #404040; }
+.pagination a:hover { background-color: #0eb7eb; }
 
-.page-item { background-color: #4d4d4d; color: #FFFFFF; padding: 4px 8px; font-weight: 400; padding: 0.5em 1em; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
+.page-item { background-color: #22c0f1; color: #FFFFFF; padding: 4px 8px; font-weight: 400; padding: 0.5em 1em; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
 
 /* Footer */
-footer { background-color: #FFFFFF; color: #333333; text-align: center; padding: 0.6667em 0; }
+footer { background-color: #FFFFFF; color: #0da4d3; text-align: center; padding: 0.6667em 0; }
 
 /* A Github stylesheet to highlight code snippet https://github.com/mojombo/tpw/blob/master/css/syntax.css */
 .lineno { color: #bfbfbf; margin-right: 1em; }
